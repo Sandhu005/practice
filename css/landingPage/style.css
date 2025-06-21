@@ -18,18 +18,18 @@ header{
     justify-content: space-evenly;
 }
 
-.headLeft{
+.logo{
     width: 40%;
     height: 100%;
     align-content: center;
 }
 
-.headLeft h3{
+.logo h3{
     color: white;
     text-align: center;
 }
 
-.headRight{
+.menu{
     width: 60%;
     height: 100%;
     align-content: center;
@@ -37,20 +37,20 @@ header{
     font-size: 15px;
 }
 
-.headRight a{
+.menu a{
     margin-right: 10px;
     text-decoration: none;
     color: rgb(177, 175, 175);
 }
 
-a:hover{
+.menu a:hover{
     color: white;
 }
 
 .banner{
     width: 100%;
-    height: 500px;
-    background-image: url(travel3.jpg);
+    height: 550px;
+    background-image: url(banner.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -78,4 +78,56 @@ a:hover{
     border-radius: 10px;
     color: white;
     text-shadow: 1px 1px rgba(75, 75, 75, 0.651);
+}
+
+.top{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(247, 246, 246);
+}
+
+.topHead{
+    color: rgb(70, 69, 69);
+    font-size: 25px;
+    font-weight:bold;
+    width: 100%;
+    height:25%;
+    align-content: center;
+    text-align: center;
+}
+
+.topMain{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topBox{
+    width: 25%;
+    height: 90%;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(230, 229, 229, 0.466);
+}
+
+.topBox h5, p{
+    margin: 10px 0px 0px 10px;
+    color: rgb(82, 81, 81);
+}
+
+.topBox p{
+    font-size: 12px;
+}
+
+img{
+    border-radius: 5px 5px 0px 0px;
+}
+
+img:hover{
+    opacity: 0.8;
+    transition-duration: 1s;
 }
