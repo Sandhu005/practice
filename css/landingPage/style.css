@@ -12,7 +12,7 @@
 
 header{
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: rgb(51, 51, 51);
     display: flex;
     justify-content: space-evenly;
@@ -82,52 +82,194 @@ header{
 
 .top{
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: rgb(247, 246, 246);
 }
 
-.topHead{
+.topHead, .aboutHead{
     color: rgb(70, 69, 69);
     font-size: 25px;
     font-weight:bold;
     width: 100%;
-    height:25%;
+    height: 25%;
     align-content: center;
     text-align: center;
 }
 
-.topMain{
-    width: 100%;
-    height: 70%;
+.topMain, .aboutMain{
+    width: 90%;
+    height: 75%;
     display: flex;
-    justify-content: space-evenly;
-}
+    justify-content: space-evenly;  
+    align-self: center;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+   }
 
 .topBox{
     width: 25%;
-    height: 90%;
+    height: 80%;
     border: 1px solid rgb(241, 241, 241);
     border-radius: 5px;
     box-shadow: 2px 2px rgba(230, 229, 229, 0.466);
+    background-color: white;
 }
 
 .topBox h5, p{
     margin: 10px 0px 0px 10px;
     color: rgb(82, 81, 81);
-}
-
-.topBox p{
     font-size: 12px;
 }
 
-img{
+.topBox img{
     border-radius: 5px 5px 0px 0px;
 }
 
-img:hover{
+.topBox img:hover{
     opacity: 0.8;
     transition-duration: 1s;
+}
+
+.about{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutImage, .aboutContent{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutImage img{
+    border-radius: 5px 5px 5px 5px;
+    object-fit: cover;
+}
+
+.aboutContent p{
+    margin-bottom: 20px;
+    color: rgb(82, 81, 81);
+    font-size: 15px;
+    width: 70%;
+    align-self: center;
+}
+
+.packages{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(247, 246, 246);
+}
+
+.packHead{
+    color: rgb(70, 69, 69);
+    font-size: 25px;
+    font-weight:bold;
+    width: 100%;
+    height:40%;
+    align-content: center;
+    text-align: center;
+}
+
+.packMain{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;  
+    align-self: center;
+   }
+
+.packBox{
+    width: 23%;
+    height: 80%;
+    border: 2px solid rgba(199, 198, 198, 0.514);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    text-wrap: balance;
+    color: rgb(82, 81, 81);
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.packBox:hover{
+    border-color: rgb(121, 121, 245);
+}
+
+.price{
+    color: blue;
+    font-weight: 600;
+}
+
+.testimony{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.testHead{
+    color: rgb(70, 69, 69);
+    font-size: 25px;
+    font-weight:bold;
+    width: 100%;
+    height:40%;
+    align-content: center;
+    text-align: center;
+}
+
+.testMain{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;  
+    align-self: center;
+   }
+
+.testBox{
+    width: 23%;
+    height: 60%;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.123);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: rgb(82, 81, 81);
+    line-height: 1.3;
+    align-items: center;
+}
+
+.testText{
+    width: 90%;
+    font-size: 15px;
+}
+
+.name{
+    width: 90%;
+    font-size: 15px;
+    color: rgb(151, 151, 151);
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: small;
 }
