@@ -71,13 +71,14 @@ header{
     margin: 20px 0px 20px 0px;
 }
 
-.bannerButton{
+.bannerButton button{
     padding: 10px;
     background-color: rgb(59, 105, 255);
     border: none;
     border-radius: 10px;
     color: white;
     text-shadow: 1px 1px rgba(75, 75, 75, 0.651);
+    cursor: pointer;
 }
 
 .top{
