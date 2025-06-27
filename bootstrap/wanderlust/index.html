@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust Travels</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
@@ -42,7 +43,7 @@
         </div>
 
         <!-- CARDS -->
-        <div class="row bg-info p-5">
+        <div class="row top">
             <div class="col-12 text-center mb-5"><h3>Top Destinations</h3></div>
             <div class="col-md-4">
                 <div class="card">
@@ -74,11 +75,53 @@
         </div>
 
         <!-- ABOUT US -->
-        <div class="row justify-content-evenly align-items-center p-5">
-            <div class="col-12 text-center mb-4"><h3>About Us</h3></div>
-            <div class="col-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam possimus amet sunt, repudiandae numquam quam deleniti accusantium provident autem adipisci iusto architecto. Debitis alias commodi quo, voluptate maxime nam placeat?</div>
-            <div class="col-5"><img src="paris.jpg" class="img-fluid" alt=""></div>
+        <div class="row about justify-content-between align-items-center">
+            <div class="col-12 text-center mb-5"><h3>About Us</h3></div>
+            <div class="col-md-6 mb-3 mb-md-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam possimus amet sunt, repudiandae numquam quam deleniti accusantium provident autem adipisci iusto architecto. Debitis alias commodi quo, voluptate maxime nam placeat?</div>
+            <div class="col-md-6"><img src="paris.jpg" class="img-fluid rounded-2" alt=""></div>
         </div>
+
+        <!-- PACKAGES -->
+        <div class="row packages justify-content-between align-items-center">
+            <div class="col-12 text-center mb-5"><h3>Travel Packages</h3></div>
+            <div class="col-md-3 border border-2 rounded-2 bg-white text-center py-3">
+                <h5>Budget Explorer</h5>
+                <p>Perfect for solo travelers or students looking for great value adventures.</p>
+                <h5 class="text-primary">$499</h5>
+            </div>
+            <div class="col-md-3 border border-primary border-2 rounded-2 bg-white text-center py-3 my-3 my-md-0">
+                <h5>Couples Retreat</h5>
+                <p>A romantic gateway with your partner in exotic destinations.</p>
+                <h5 class="text-primary">$999</h5>
+            </div>
+            <div class="col-md-3 border border-2 rounded-2 bg-white text-center py-3">
+                <h5>Luxury Package</h5>
+                <p>5-star stay, private guides, and everything first-class.</p>
+                <h5 class="text-primary">$1999</h5>
+            </div>
+        </div>
+
+        <!-- TESTIMONIAL -->
+        <div class="row test justify-content-between align-items-center">
+            <div class="col-12 text-center mb-5"><h3>What Our Travelers Say</h3></div>
+            <div class="col-md-3 rounded-2 shadow bg-white text-start py-3">
+                <p>"Best travel experience ever! Everything was perfectly arranged."</p>
+                <h6 class="">- Ananya Gupta</h6>
+            </div>
+            <div class="col-md-3 rounded-2 shadow bg-white text-start py-3 my-3 my-md-0">
+                <p>"We loved every minute of Bali trip. Will look again!."</p>
+                <h6 class="">- Rohan Mehta</h6>
+            </div>
+            <div class="col-md-3 rounded-2 shadow bg-white text-start py-3">
+                <p>"Highly professional team and amazing service."</p>
+                <h6 class="">- Sarah Khan</h6>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+         <div class="row footer p-3">
+            <div class="col text-center text-white">&copy; 2025 Wanderlust Travels. All Rights Reserved.</div>
+         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
