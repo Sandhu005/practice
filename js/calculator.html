@@ -17,9 +17,13 @@
 
 <body>
     <div class="container d-flex justify-content-center">
-        <div class="row bg-dark w-25 justify-content-center py-3 rounded">
+        <div class="row bg-dark w-25 justify-content-center py-3 mt-5 rounded">
             <div class="row">
                 <input class="col rounded" type="text" id="display">
+            </div>
+            <div class="row pt-2 justify-content-between align-items-center">
+                <div class="col-6 text-white text-center fs-5">CASIO</div>
+                <button class="col-6 p-2" onclick="cls()">AC</button>
             </div>
             <div class="row pt-2 justify-content-between">
                 <button class="col-3" onclick="num(1)">1</button>
@@ -49,27 +53,40 @@
     </div>
 
     <script>
+        let currentOpperator = null;
         function num(n) {
             document.getElementById("display").value += n;
         }
-        function opp(opp) {
-            document.getElementById("display").value += opp;
+        function opp(op) {
+            document.getElementById("display").value += op;
+            currentOpperator = op;
         }
         function result() {
             let val = document.getElementById("display").value
-            if (opp = "+") {
-                let nums = val.split("+");
-                document.getElementById("display").value = Number(nums[0]) + Number(nums[1]);
-            } else if (opp = "-") {
-                let nums = val.split("-");
-                document.getElementById("display").value = Number(nums[0]) - Number(nums[1]);
-            } else if (opp = "*") {
-                let nums = val.split("*");
-                document.getElementById("display").value = Number(nums[0]) * Number(nums[1]);
-            } else if (opp = "/") {
-                let nums = val.split("/");
-                document.getElementById("display").value = Number(nums[0]) / Number(nums[1]);
+            let nums = val.split(currentOpperator);
+            let num1 = Number(nums[0]);
+            let num2 = Number(nums[1]);
+            
+            switch(currentOpperator){
+                case "+":
+                    document.getElementById("display").value = num1+num2;
+                    break;
+                case "-":
+                    document.getElementById("display").value = num1-num2;
+                    break;
+                case "*":
+                    document.getElementById("display").value = num1*num2;
+                    break;
+                case "/":
+                    document.getElementById("display").value = num1/num2;
+                    break;
+                default:
+                    document.getElementById("display").value = "Error!";
+                    break;
             }
+        }
+        function cls(){
+            document.getElementById("display").value = null;
         }
     </script>
 
